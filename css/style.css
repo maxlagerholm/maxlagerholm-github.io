@@ -1,0 +1,300 @@
+
+/* css för att skriva över bootstrap css */
+
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);                 /* gör skugga på bakgrundsfärgen */
+}
+
+
+
+/* STARTSIDAN
+-------------------------------------------------- */
+
+.home-bg {                                                        /* sätt i body taggen för att sätta individuell bakrundsbild till sidan */
+  background: url("../img/maxlagerholm.jpg");                     /* bakgrundsbild */
+  background-position: center;                                    /* centrerar bilden */
+  background-repeat: no-repeat;                                   /* Om bilden ska repeteras bredvid varandra */
+  background-attachment: scroll;
+  background-size: cover;                                         /* Om bilden ska stretchas hela vägen ut till kanten eller inte sträckas */
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 75%);                    /* Ger en kraftigare skuggning runt bakgrunden än standard */
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/* header delen */
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .75);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+
+/* PORTFOLIO SIDAN (Carousel)
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 32rem;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 350;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+
+
+
+
+
+/* KONTACT SIDAN
+-------------------------------------------------- */
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+  -webkit-box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+  -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+}
+
+.info-wrap {
+  background: #1c1e25;
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+  text-align: left;
+  padding-left: 40px;
+}
+
+
+
+
+
+/* EGEN CSS  (Kontakt + Modal/Portfolio)
+-------------------------------------------------- */
+
+.contactlink {                              /* tar bort länk-dekorationen från länkarna på kontaktsidan */
+  text-decoration: none;
+  background-color: transparent;
+}
+.contactlink:hover {                        /* tar bort länk-dekorationen från länkarna på kontaktsidan */
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.contactcontainer {
+  max-width: 510px;
+}
+
+.modallink {                                /* tar bort länk-dekorationen från bilden till att öppna modalen */
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.modallink:hover {                          /* tar bort länk-dekorationen från bilden till att öppna modalen */
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.modaldesign {                              /* ändrar texten i "namnlisten" på modalen */
+  background: transparent;
+  color:black;
+  text-shadow: none;
+}
+
+.paddingtop {                               /* trycker ner texten som annars är centrerad på startsidan */
+  padding-top: 170px;
+}
+
+.paddingcardright {                         /* tar bort padding från höger sida av högra kortet */
+  padding-right: 5px;
+  padding-left: 24px;
+}
+
+.paddingcardleft {                          /* tar bort padding från vänster sida av vänstra kortet */
+  padding-right: 24px;
+  padding-left: 5px;
+}
+
+.introtext {                                /* ändrar tjockleken på headertexten på startsidan */
+  font-weight: 400;
+}
+
+.introp {                                   /* ändrar storleken och tjockleken på paragraftexten på startsidan */
+  font-size: 22px;
+  font-weight: 350;
+}
+
+.card {
+  border: 1px solid rgb(0 0 0 / 70%);
+}
+
+.cardwidth {
+  width: auto;
+}
+
+.cardtext {
+  color: black;
+  text-shadow: none;
+}
+
+.cardlink {                                 /* tar bort länk-dekorationen från bilden till att öppna modalen */
+  text-decoration: none;
+  color: black;
+}
+
+.cardlink:hover {                           /* tar bort länk-dekorationen från bilden till att öppna modalen */
+  text-decoration: none;
+  color: black;
+}
+
+.slogantext {                               /* textstorlek på "slogan" texten efter titeln i portfolion */
+  font-size: 37px;
+}
+
+.imgsize {                                  /* ser till att storleken på bilderna i portfolion är fasta och lägger till en border*/
+  width: 400px;
+  height: 400px;
+  padding: 0px;
+  border: solid 1px #333
+}
+
+.caroimgsize {                              /* gör så att bildens storlek i carusellen anpassar sig till ramen */
+  max-width: 100%;
+}
+
+.imgsize:hover {                            /* lägger till en border när man hover över länken */
+  border: solid 1px #333
+}
+
+.leadpaddleft {                             /* lägger till padding brevid lead texten i portfolion */
+  padding-left: 24px;
+}
+
+.leadpaddright {                            /* lägger till padding brevid lead texten i portfolion */
+  padding-right: 24px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {                  /* till carusellen */
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {                     /* till carusellen */
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {                  /* till carusellen */
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 768px) {                 /* till carusellen */
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 576px) {                 /* till modal rutan */
+    .modal-dialog {
+      min-width: 800px;
+    }
+}

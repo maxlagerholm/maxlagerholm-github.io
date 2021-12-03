@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Max Lagerholm">
+  <meta name="description" content="A UX Designer based in Malmö, Sweden.">
+  <meta name="keywords"
+    content="max lagerholm, lagerholm, ux design, ux designer, ux designer malmö, user experience designer, a11y, fotograf malmö, photographer">
+  <title>Max Lagerholm • Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- bootstrap css, ska ligga överst för att läsas först -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- egen css med ändringar som skriver över bootstrap -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="container">
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Max Lagerholm</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="container marketing">
+
+        <hr class="featurette-divider">
+
+        <!-- start på första projektet/kategorin -->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Street Photography. <span class="text-muted slogantext">Capturing the beauty
+                of people and life.</span></h2>
+            <p class="lead leadpaddleft">A collection of some of my street photography I've taken during my travels or
+              as work assignments.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="btn btn-primary modallink imgsize" data-bs-toggle="modal" data-bs-target="#photo_street_modal"
+              src="../img/bear400.jpg"></img>
+
+            <!-- street photography modal -->
+            <div class="modal modaldesign" id="photo_street_modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- modal titel -->
+                  <div class="modal-header">
+                    <h6 class="modal-title">Street Photography</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- modal kroppen där karusellen sätts in -->
+                  <div class="modal-body">
+
+                    <!-- karusell -->
+                    <div id="photo_street_caro" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- navigeringsprickar -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#photo_street_caro" data-bs-slide-to="0"
+                          class="active"></button>
+                        <button type="button" data-bs-target="#photo_street_caro" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#photo_street_caro" data-bs-slide-to="2"></button>
+                      </div>
+
+                      <!-- bilder i karusellen -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                      </div>
+
+                      <!-- höger och vänster bläddringsknappar -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#photo_street_caro"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#photo_street_caro"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slut på första projektet/kategorin -->
+        <hr class="featurette-divider">
+
+        <!-- start på andra projektet/kategorin -->
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Nature Photogaphy. <span class="text-muted slogantext">Beautiful places and
+                hidden gems.</span>
+            </h2>
+            <p class="lead leadpaddright">A collection of some of my nature photography I've taken during my travels or
+              as work assignments.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="btn btn-primary modallink imgsize" data-bs-toggle="modal" data-bs-target="#photo_nature_modal"
+              src="../img/bear400.jpg"></img>
+
+            <!-- nature photography modal -->
+            <div class="modal modaldesign" id="photo_nature_modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- modal titel -->
+                  <div class="modal-header">
+                    <h6 class="modal-title">Nature Photography</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- modal kroppen där karusellen sätts in -->
+                  <div class="modal-body">
+
+                    <!-- karusell -->
+                    <div id="photo_nature_caro" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- navigeringsprickar -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#photo_nature_caro" data-bs-slide-to="0"
+                          class="active"></button>
+                        <button type="button" data-bs-target="#photo_nature_caro" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#photo_nature_caro" data-bs-slide-to="2"></button>
+                      </div>
+
+                      <!-- bilder i karusellen -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                      </div>
+
+                      <!-- höger och vänster bläddringsknappar -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#photo_nature_caro"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#photo_nature_caro"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slut på andra projektet/kategorin -->
+        <hr class="featurette-divider">
+
+        <!-- start på tredje projektet/kategorin -->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Architectural Photography. <span class="text-muted slogantext">Designed
+                objects that catches your eye.</span></h2>
+            <p class="lead leadpaddleft">A collection of some of my architectural photography I've taken during my
+              travels or as work assignments.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="btn btn-primary modallink imgsize" data-bs-toggle="modal" data-bs-target="#photo_archi_modal"
+              src="../img/bear400.jpg"></img>
+
+            <!-- architectural photography modal -->
+            <div class="modal modaldesign" id="photo_archi_modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- modal titel -->
+                  <div class="modal-header">
+                    <h6 class="modal-title">Architectural Photography</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- modal kroppen där karusellen sätts in -->
+                  <div class="modal-body">
+
+                    <!-- karusell -->
+                    <div id="photo_archi_caro" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- navigeringsprickar -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#photo_archi_caro" data-bs-slide-to="0"
+                          class="active"></button>
+                        <button type="button" data-bs-target="#photo_archi_caro" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#photo_archi_caro" data-bs-slide-to="2"></button>
+                      </div>
+
+                      <!-- bilder i karusellen -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                      </div>
+
+                      <!-- höger och vänster bläddringsknappar -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#photo_archi_caro"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#photo_archi_caro"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slut på tredje projektet/kategorin -->
+        <hr class="featurette-divider">
+
+        <!-- start på fjärde projektet/kategorin -->
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Portrait Photogaphy. <span class="text-muted slogantext">Capturing humans and
+                souls.</span>
+            </h2>
+            <p class="lead leadpaddright">A collection of some of my portrait photography I've taken during my travels
+              or as work assignments.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="btn btn-primary modallink imgsize" data-bs-toggle="modal" data-bs-target="#photo_portrait_modal"
+              src="../img/bear400.jpg"></img>
+
+            <!-- portrait photography modal -->
+            <div class="modal modaldesign" id="photo_portrait_modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- modal titel -->
+                  <div class="modal-header">
+                    <h6 class="modal-title">Portrait Photography</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- modal kroppen där karusellen sätts in -->
+                  <div class="modal-body">
+
+                    <!-- karusell -->
+                    <div id="photo_portrait_caro" class="carousel slide" data-bs-ride="carousel">
+
+                      <!-- navigeringsprickar -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#photo_portrait_caro" data-bs-slide-to="0"
+                          class="active"></button>
+                        <button type="button" data-bs-target="#photo_portrait_caro" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#photo_portrait_caro" data-bs-slide-to="2"></button>
+                      </div>
+
+                      <!-- bilder i karusellen -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="caroimgsize" src="../img/maxlagerholm.jpg" alt="Max Lagerholm">
+                        </div>
+                      </div>
+
+                      <!-- höger och vänster bläddringsknappar -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#photo_portrait_caro"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#photo_portrait_caro"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slut på fjärde projektet/kategorin -->
+        <hr class="featurette-divider">
+
+      </div> <!-- stänger container marketing -->
+    </main>
+
+    <footer class="mt-auto text-muted">
+      <p>Copyright © Max Lagerholm 2021</p>
+    </footer>
+
+  </div>
+</body>
+<!-- bootstrap jScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
