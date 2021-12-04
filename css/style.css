@@ -76,14 +76,11 @@ body {
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
+.carousel-item > img {                      /* gör så att bildens storlek i carusellen anpassar sig till ramen */
   margin-left: auto;
   margin-right: auto;
-  height: 32rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -246,10 +243,6 @@ body {
   height: 400px;
   padding: 0px;
   border: solid 1px #333
-}
-
-.caroimgsize {                              /* gör så att bildens storlek i carusellen anpassar sig till ramen */
-  max-width: 100%;
 }
 
 .imgsize:hover {                            /* lägger till en border när man hover över länken */
