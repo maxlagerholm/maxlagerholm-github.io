@@ -212,6 +212,11 @@ body {
   padding-left: 5px;
 }
 
+.paddingabout {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .introtext {                                /* ändrar tjockleken på headertexten på startsidan */
   font-weight: 400;
 }
@@ -322,7 +327,7 @@ body {
   .paddingcardright {                         /* neutraliserar paddingen i denna skrämstorlek och lägger till i topp för att passa */
     padding-right: 5px;
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 0px;                         /* satt på 0 för att skapa mindre utrymme på toppen */
     padding-bottom: 10px;
   }
   
