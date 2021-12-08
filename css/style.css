@@ -182,10 +182,19 @@ body {
   border-color: transparent;
 }
 
-.modaldesign {                              /* ändrar texten i "namnlisten" på modalen */
-  background: transparent;
+.modaldesign {                              /* ändrar texten i "namnlisten" på modalen */                                   /* BYTA NAMN TILL MODALTOPTEXT */
   color:black;
   text-shadow: none;
+}
+
+.modal-body {                               /* själva ramen för bilderna i karusellen */
+  padding: 0;
+}
+
+.modal-dialog {                             /* ger modal-ramen padding runt om */
+  padding-top: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .paddingtop {                               /* trycker ner texten som annars är centrerad på startsidan */
@@ -215,12 +224,22 @@ body {
   border: 1px solid rgb(0 0 0 / 70%);
 }
 
+.cardabout {
+  background-color: #212529;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.cardabouttitle {
+  font-weight: 400;
+}
+
 .cardwidth {
   width: auto;
 }
 
 .cardtext {
-  color: black;
   text-shadow: none;
 }
 
@@ -288,6 +307,8 @@ body {
 
 @media (min-width: 576px) {                 /* till modal rutan */
     .modal-dialog {
-      min-width: 800px;
+      max-width: 870px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 }
