@@ -217,7 +217,7 @@ body {
 }
 
 .introp {                                   /* ändrar storleken och tjockleken på paragraftexten på startsidan */
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 350;
 }
 
@@ -352,5 +352,9 @@ body {
 
   .lead {                                     /* minskar textstorleken i denna skärmstorlek */
     font-size: 16px;
+  }
+
+  .introp {
+    font-size: 20px;
   }
 }
