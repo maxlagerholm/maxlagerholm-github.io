@@ -198,12 +198,6 @@ body {
   padding-right: 5px;
 }
 
-.modal-dialog-port {                        /* FÖR PORTRÄTT - ger modal-ramen padding runt om */
-  padding-top: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .paddingtop {                               /* trycker ner texten som annars är centrerad på startsidan */
   padding-top: 170px;
 }
@@ -328,10 +322,9 @@ body {
     padding-right: 10px;
   }
 
-  .modal-dialog-port {                      /* FÖR PORTRÄTT */
+  .portrait {                               /* FÖR PORTRÄTT - lägg till efter .modal-dialog */
     max-width: 850px;
-    padding-left: 10px;
-    padding-right: 10px;
+
   }
 }
 
