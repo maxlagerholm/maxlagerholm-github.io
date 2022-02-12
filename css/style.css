@@ -192,8 +192,14 @@ body {
   padding: 0;
 }
 
-.modal-dialog {                             /* ger modal-ramen padding runt om */
-  padding-top: 100px;
+.modal-dialog {                             /* FÖR LANDSKAP - ger modal-ramen padding runt om */
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.modal-dialog-port {                        /* FÖR PORTRÄTT - ger modal-ramen padding runt om */
+  padding-top: 50px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -316,8 +322,14 @@ body {
 }
 
 @media (min-width: 576px) {                 /* till modal rutan */
-  .modal-dialog {
-    max-width: 870px;
+  .modal-dialog {                           /* FÖR LANDSKAP */
+    max-width: 1260px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal-dialog-port {                      /* FÖR PORTRÄTT */
+    max-width: 850px;
     padding-left: 10px;
     padding-right: 10px;
   }
